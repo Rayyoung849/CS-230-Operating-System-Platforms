@@ -1,0 +1,34 @@
+package com.gamingroom;
+
+/**
+ * Application start-up program
+ * 
+ * 
+ */
+public class ProgramDriver {
+	
+	/**
+	 * The one-and-only main() method
+	 * 
+	 * @param args command line arguments
+	 */
+	public static void main(String[] args) {
+		
+		// Obtain reference to the singleton instance
+		// Get one instance of GameService thats shared using singleton pattern
+		GameService service = GameService.getInstance();
+	
+		
+		System.out.println("\nAbout to test initializing game data...");
+		
+		// initialize with some game data
+		Game game1 = service.addGame("Game #1");
+		System.out.println(game1);
+		Game game2 = service.addGame("Game #2");
+		System.out.println(game2);
+		
+		// use another class to prove there is only one instance
+		SingletonTester tester = new SingletonTester();
+		tester.testSingleton();
+	}
+}
