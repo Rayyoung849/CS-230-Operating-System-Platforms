@@ -10,3 +10,4 @@ CS-230 portfolio for Draw It or Lose It - modules, design docs, and code.
 - module-05 - Project Two
 - module-06 - Memory and Storage Paper
 - module-07 - Project Three
+- module-08 - Journal Portfolio
